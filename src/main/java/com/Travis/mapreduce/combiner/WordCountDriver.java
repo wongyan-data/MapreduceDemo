@@ -33,7 +33,7 @@ public class WordCountDriver {
         job.setCombinerClass (Wordcombiner.class);
 //   6. 设置输出路径和输入入境
         org.apache.hadoop.mapreduce.lib.input.FileInputFormat.setInputPaths (job,new Path("E:\\java files\\Project1\\input"));
-        org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.setOutputPath(job,new Path("E:\\java files\\Project1\\CombinedOutput1212"));
+        org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.setOutputPath(job,new Path("E:\\java files\\Project1\\CombinedOutput123"));
 //   7.提交job
         boolean result = job.waitForCompletion (true);
         System.exit(result ? 0 : 1);
