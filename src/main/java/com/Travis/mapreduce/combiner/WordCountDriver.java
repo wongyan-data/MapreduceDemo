@@ -31,7 +31,7 @@ public class WordCountDriver {
         //       设置虚拟切片的大小
 //        CombineTextInputFormat.setMaxInputSplitSize(job, 4194304);
         job.setCombinerClass (Wordcombiner.class);
-//   6. 设置输出路径和输入入境
+//   6. 设置输出路径和输入路径
         org.apache.hadoop.mapreduce.lib.input.FileInputFormat.setInputPaths (job,new Path("E:\\java files\\Project1\\input"));
         org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.setOutputPath(job,new Path("E:\\java files\\Project1\\C1"));
 //   7.提交job
